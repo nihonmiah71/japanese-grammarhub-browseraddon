@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(() => {
     
     chrome.contextMenus.create({
       id: "analyzeGrammarSelection",
-      title: "Japanisch Grammatik Analyse starten",
+      title: "Start Japanese Grammar Analysis",
       contexts: ["page", "selection"]
     });
   });

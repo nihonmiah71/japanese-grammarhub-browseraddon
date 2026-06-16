@@ -136,7 +136,7 @@
   },
   "1775895481051": {
     "nid": "1775895481051",
-    "tags": "N4",
+    "tags": "N4 verbconjugations",
     "level_and_point": "4:ば (conditional form; If [A] then [B])",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b0-ba-conditional-form-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>special formatting rules (see below)</td></tr></tbody></table>",
@@ -514,7 +514,7 @@
   },
   "1775895481093": {
     "nid": "1775895481093",
-    "tags": "N1",
+    "tags": "listing N1",
     "level_and_point": "1:だの～だの~ (and; and the like; and so forth ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a0%e3%81%ae%ef%bd%9e%e3%81%a0%e3%81%ae-dano-dano-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr class=\"alert-secondary\"><td colspan=\"2\">Pattern</td></tr><tr><td colspan=\"2\">[A] + だの + [B] + だの</td></tr><tr class=\"alert-secondary\"><td colspan=\"2\">Conjugations</td></tr><tr><td>Verb</td><td rowspan=\"4\">だの</td></tr><tr><td>Noun (だった）</td></tr><tr><td>な-adjective （だった）</td></tr><tr><td>い-adjective</td></tr></tbody></table>",
@@ -1261,7 +1261,7 @@
   },
   "1775895481177": {
     "nid": "1775895481177",
-    "tags": "N4",
+    "tags": "N4 verbconjugations",
     "level_and_point": "4:意向形 (volitional form​; let's do ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e6%84%8f%e5%90%91%e5%bd%a2-ikou-kei-volitional-form-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>see conjugation rules below...</td></tr></tbody></table>",
@@ -3043,7 +3043,7 @@
   },
   "1775895481376": {
     "nid": "1775895481376",
-    "tags": "N1 n1n2focusgroupminimal",
+    "tags": "listing N1 n1n2focusgroupminimal",
     "level_and_point": "1:なり～なり~ ([A] or [B] or something; for instance ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%82%8a%ef%bd%9e%e3%81%aa%e3%82%8a-narinari-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Noun-1</td><td rowspan=\"2\">なり</td><td>Noun-2</td><td rowspan=\"2\">なり</td></tr><tr><td>Verb (Dictionary Form)</td><td>Verb (Dictionary Form)</td></tr></tbody></table>",
@@ -4024,7 +4024,7 @@
   },
   "1775895481485": {
     "nid": "1775895481485",
-    "tags": "N1",
+    "tags": "listing N1",
     "level_and_point": "1:のやら～のやら~ (or ~ (I don't know))",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ae%e3%82%84%e3%82%89%ef%bd%9e%e3%81%ae%e3%82%84%e3%82%89-no-yara-no-yara/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr class=\"alert-secondary\"><td colspan=\"2\">[A]のやら + [B]のやら</td></tr><tr><td>Verb (casual form)</td><td rowspan=\"3\">のやら</td></tr><tr><td>な-adjective + な</td></tr><tr><td>い-adjective</td></tr></tbody></table>",
@@ -4501,7 +4501,7 @@
   },
   "1775895481538": {
     "nid": "1775895481538",
-    "tags": "N4",
+    "tags": "N4 verbconjugations",
     "level_and_point": "4:られる (potential form; ability or inability to do something)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%89%e3%82%8c%e3%82%8b-rareru-japanese-potential-form/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Ru-verb</td><td>る -&gt; られる</td></tr><tr><td>U-verb</td><td>change \"u\" to \"e\" + る</td></tr><tr><td>やる</td><td>やれる</td></tr><tr><td>する</td><td>できる</td></tr><tr><td>くる</td><td>こられる</td></tr></tbody></table>",
@@ -4618,7 +4618,7 @@
   },
   "1775895481551": {
     "nid": "1775895481551",
-    "tags": "N4",
+    "tags": "N4 verbconjugations",
     "level_and_point": "4:させられる- (causative-passive; to be made to do something)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%95%e3%81%9b%e3%82%89%e3%82%8c%e3%82%8b-saserareru-meaning-causative-passive-form/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb (causative form させ<s>る</s>)</td><td>られる</td></tr><tr><td>くる</td><td>こさせられる</td></tr><tr><td>やる</td><td>やらせられる</td></tr></tbody></table>",
@@ -4627,7 +4627,7 @@
   },
   "1775895481552": {
     "nid": "1775895481552",
-    "tags": "N4",
+    "tags": "N4 verbconjugations",
     "level_and_point": "4:させる (causative form; to make/let somebody do something)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%95%e3%81%9b%e3%82%8b-saseru-causative-form-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Ru-verb</td><td>る -&gt; させる</td></tr><tr><td>U-verb</td><td>(ない form) ない -&gt; せる</td></tr><tr><td>する</td><td>させる</td></tr><tr><td>やる</td><td>やらせる</td></tr><tr><td>くる</td><td>こさせる</td></tr></tbody></table>",
@@ -4717,7 +4717,7 @@
   },
   "1775895481562": {
     "nid": "1775895481562",
-    "tags": "kurzpartikelfokus N4",
+    "tags": "kurzpartikelfokus listing N4",
     "level_and_point": "4:し (and; and what’s more ~ (emphasis))",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%97-shi-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb (casual)</td><td rowspan=\"4\">し</td></tr><tr><td>Noun + だ</td></tr><tr><td>な-adjective + だ</td></tr><tr><td>い-adjective</td></tr></tbody></table>",
@@ -5239,7 +5239,7 @@
   },
   "1775895481621": {
     "nid": "1775895481621",
-    "tags": "N1",
+    "tags": "listing N1",
     "level_and_point": "1:たら～たで~ (if / in the case... of course / should ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%89%ef%bd%9e%e3%81%9f%e3%81%a7-tara-tade-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb (た) + ら</td><td>Verb (た) + で</td></tr><tr><td>Noun + なら</td><td>Noun + で</td></tr><tr><td>な-adj + なら</td><td>な-adj + で</td></tr><tr><td>い-adj + <s>い</s>かったら</td><td>い-adj + <s>い</s>かったで</td></tr></tbody></table>",
@@ -5266,7 +5266,7 @@
   },
   "1775895481624": {
     "nid": "1775895481624",
-    "tags": "N5",
+    "tags": "listing N5",
     "level_and_point": "5:たり～たり~ (do such things as A and B)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%8a%ef%bd%9e%e3%81%9f%e3%82%8a%e3%81%99%e3%82%8b-tari-tari-suru-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb-た + り ～ Verb-た + り + する</td></tr><tr><td>Noun + だったり ～ Noun + だったり</td></tr><tr><td>な-adj + だったり ～ な-adj + だったり</td></tr><tr><td>い-adj + <s>い</s>かったり ～ い-adj + <s>い</s>かったり</td></tr></tbody></table>",
@@ -5878,7 +5878,7 @@
   },
   "1775895481692": {
     "nid": "1775895481692",
-    "tags": "N1 n1n2focusgroupminimal",
+    "tags": "listing N1 n1n2focusgroupminimal",
     "level_and_point": "1:といい～といい~ (both ... and; not only ... also; whether it be ... or ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%84%ef%bd%9e%e3%81%a8%e3%81%84%e3%81%84-to-ii-to-ii-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Noun</td><td>といい</td><td>Noun</td><td>といい</td></tr></tbody></table>",
@@ -6013,7 +6013,7 @@
   },
   "1775895481707": {
     "nid": "1775895481707",
-    "tags": "N1",
+    "tags": "listing N1",
     "level_and_point": "1:といわず～といわず~ (both; not only A or B, but (overall) ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%82%8f%e3%81%9a%ef%bd%9e%e3%81%a8%e3%81%84%e3%82%8f%e3%81%9a-to-iwazu-to-iwazu-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Noun-1</td><td>といわず</td><td>Noun-2</td><td>といわず</td></tr></tbody></table>",
@@ -6247,7 +6247,7 @@
   },
   "1775895481733": {
     "nid": "1775895481733",
-    "tags": "N1",
+    "tags": "listing N1",
     "level_and_point": "1:とも～とも~ (unable to draw a conclusion; unable to judge)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%82%82%ef%bd%9e%e3%81%a8%e3%82%82-tomo-tomo-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb (casual)</td><td rowspan=\"3\">とも</td><td>Verb (casual)</td><td rowspan=\"3\">とも</td></tr><tr><td>Noun</td><td>Noun</td></tr><tr><td>Adjective</td><td>Adjective</td></tr></tbody></table>",
@@ -6373,7 +6373,7 @@
   },
   "1775895481747": {
     "nid": "1775895481747",
-    "tags": "N1",
+    "tags": "listing N1",
     "level_and_point": "1:つ～つ~ (and ~ (indicates two contrasting actions))",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a4%ef%bd%9e%e3%81%a4-tsu-tsu-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb (stem) <s>ます</s></td><td>つ</td><td>Verb (stem) <s>ます</s></td><td>つ</td></tr></tbody></table>",
@@ -6490,7 +6490,7 @@
   },
   "1775895481760": {
     "nid": "1775895481760",
-    "tags": "N4",
+    "tags": "N4 verbconjugations",
     "level_and_point": "4:受身形 (passive form; passive voice)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e5%8f%97%e8%ba%ab%e5%bd%a2-ukemi-japanese-passive-form/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Ru-verb</td><td>る -&gt; られる</td></tr><tr><td>U-verb</td><td>(ない form) ない -&gt; れる</td></tr><tr><td>する</td><td>される</td></tr><tr><td>くる</td><td>こられる</td></tr></tbody></table>",
@@ -6616,7 +6616,7 @@
   },
   "1775895481774": {
     "nid": "1775895481774",
-    "tags": "N1",
+    "tags": "listing N1",
     "level_and_point": "1:わ〜わで~ (and (listing negative things happening at the same time))",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%8f%e3%80%9c%e3%82%8f%e3%81%a7-wa-wade-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb (casual)</td><td rowspan=\"3\">わ</td><td>Verb (casual)</td><td rowspan=\"3\">わで</td></tr><tr><td>な-adj.</td><td>な-adj.</td></tr><tr><td>い-adj. + い</td><td>い-adj. + い</td></tr></tbody></table>",
@@ -6724,7 +6724,7 @@
   },
   "1775895481786": {
     "nid": "1775895481786",
-    "tags": "N2",
+    "tags": "listing N2",
     "level_and_point": "2:やら～やら~ (such things as A and B; A and B and so on ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%84%e3%82%89%ef%bd%9e%e3%82%84%e3%82%89-yara-yara-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb (dictionary)</td><td rowspan=\"3\">やら + [B]やら</td></tr><tr><td>Noun</td></tr><tr><td>い-adjective</td></tr></tbody></table>",
@@ -6733,7 +6733,7 @@
   },
   "1775895481787": {
     "nid": "1775895481787",
-    "tags": "N1",
+    "tags": "listing N1",
     "level_and_point": "1:やれ～やれ~ (pattern to give two representative examples (usually negative))",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%84%e3%82%8c%ef%bd%9e%e3%82%84%e3%82%8c-yare-yare-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td rowspan=\"2\">やれ</td><td>Noun + だ(の)</td><td rowspan=\"2\">やれ</td><td>Noun + だ(の) + と</td></tr><tr><td>sentence</td><td>sentence</td></tr></tbody></table>",
@@ -7192,7 +7192,7 @@
   },
   "1775896028433": {
     "nid": "1775896028433",
-    "tags": "N4",
+    "tags": "listing N4",
     "level_and_point": "4:など (such as; things like ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%81%a9-nado-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Noun</td><td>など</td></tr></tbody></table>",
@@ -7453,7 +7453,7 @@
   },
   "1775896028462": {
     "nid": "1775896028462",
-    "tags": "N4",
+    "tags": "listing N4",
     "level_and_point": "4:とか～とか~ (among other things; such as; like ~)",
     "link": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%8b%ef%bd%9e%e3%81%a8%e3%81%8b-toka-toka-meaning/",
     "construction": "<table class=\"table table-bordered table-sm usage\"><tbody><tr><td>Verb (dictionary form) + とか</td><td>Verb (dictionary form) + とか</td></tr><tr><td>Noun + とか</td><td>Noun + とか</td></tr></tbody></table>",

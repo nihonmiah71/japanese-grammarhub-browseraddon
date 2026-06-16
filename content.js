@@ -1,20 +1,20 @@
-console.log("[Grammar Addon] Serverloses Analyse-Script ist bereit.");
+console.log("[Grammar Addon] Serverless analysis script is ready.");
 
-// Globaler Speicher für geminte Karten im aktuellen Tab Session-Scope
+// Global storage for mined cards in the current tab session scope
 let minedItems = [];
-// Globaler Speicher für die statistische und chronologische Auswertung
+// Global storage for statistical and chronological evaluation
 let analysisMatches = [];
 let uniqueIdCounter = 0;
 
-// Empfange das Aktivierungssignal aus dem Kontextmenü
+// Receive activation signal from the context menu
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "analyzeSelection") {
-    console.log("[Grammar Addon] Starte Analyse...");
+    console.log("[Grammar Addon] Starting analysis...");
     processPage(); 
   }
 });
 
-// Hilfsfunktion: Holt alle unberührten, reinen Textknoten (optional innerhalb einer Selektion)
+// Helper function: Fetches all untouched, pure text nodes (optional within a selection)
 function getAllTextNodes(container, targetRange = null) {
   const textNodes = [];
   const walk = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
@@ -45,7 +45,7 @@ function getAllTextNodes(container, targetRange = null) {
   return textNodes;
 }
 
-// Extrahiert den Satzkontext: Löscht HTML-Elemente, behält den Reintext und fettet das Zielwort via <b>
+// Extracts sentence context: Strips HTML elements, retains plain text, and bolds the target word via <b>
 function extractSentenceContext(span) {
   const container = span.closest('p, div, li, td, section, article') || span.parentNode;
   let textBefore = "";
@@ -74,7 +74,7 @@ function extractSentenceContext(span) {
   return `${cleanBefore}<b>${targetWord}</b>${cleanAfter}`.trim();
 }
 
-// Hauptprozess der Analyse
+// Main process of the analysis
 async function processPage() {
   try {
     const patternsUrl = chrome.runtime.getURL('data/patterns_data.json');
@@ -96,7 +96,7 @@ async function processPage() {
       targetRange = selection.getRangeAt(0).cloneRange();
     }
 
-    console.log(`[Grammar Addon] Starte optimierte In-Memory Analyse mit ${sortedPatterns.length} Patterns...`);
+    console.log(`[Grammar Addon] Starting optimized in-memory analysis with ${sortedPatterns.length} patterns...`);
 
     const textNodes = getAllTextNodes(document.body, targetRange);
     
@@ -129,7 +129,7 @@ async function processPage() {
       try {
         regex = new RegExp(pObj.pattern, 'g');
       } catch (e) {
-        console.error("[Grammar Addon] Fehlerhafte Regex übersprungen:", pObj.pattern, e);
+        console.error("[Grammar Addon] Malformed regex skipped:", pObj.pattern, e);
         continue;
       }
 
@@ -202,7 +202,7 @@ async function processPage() {
 
         const firstNid = m.nidsString.split(',')[0];
         const gInfo = grammarData[firstNid];
-        const grammarName = gInfo ? (gInfo.level_and_point || gInfo.Level_And_Grammar_Point || 'Unbekannt') : 'Unbekannt';
+        const grammarName = gInfo ? (gInfo.level_and_point || gInfo.Level_And_Grammar_Point || 'Unknown') : 'Unknown';
 
         analysisMatches.push({
           elementId: uniqueMatchId,
@@ -264,10 +264,10 @@ async function processPage() {
       }
     }
 
-    console.log(`[Grammar Addon] Analyse beendet. ${localNewMatchesCount} neue Treffer hinzugefügt.`);
+    console.log(`[Grammar Addon] Analysis finished. ${localNewMatchesCount} new matches added.`);
 
   } catch (error) {
-    console.error("[Grammar Addon] Kritischer Fehler bei der Analyse:", error);
+    console.error("[Grammar Addon] Critical error during analysis:", error);
   }
 }
 
@@ -341,7 +341,7 @@ function setupFloatingHub() {
       <button class="close-panel-btn">✕</button>
     </div>
     <div class="tab-bar">
-      <button class="tab-btn active" id="btn-tab-single">Einzelkarten</button>
+      <button class="tab-btn active" id="btn-tab-single">Individual Cards</button>
       <button class="tab-btn" id="btn-tab-update">Grammar Updates</button>
     </div>
     <div class="table-wrapper">
@@ -351,7 +351,7 @@ function setupFloatingHub() {
       </table>
     </div>
     <div class="footer-actions">
-      <button class="action-btn" id="btn-export">TSV Exportieren</button>
+      <button class="action-btn" id="btn-export">Export TSV</button>
     </div>
   `;
   shadow.appendChild(container);
@@ -428,7 +428,7 @@ function setupFloatingHub() {
 
 function adjustBlueHubPosition() {
   const greenHub = document.getElementById('grammar-miner-hub');
-  const yellowHub = document.getElementById('grammar-stats-hub'); // Strukturell das alte blueHub, farblich jetzt gelb
+  const yellowHub = document.getElementById('grammar-stats-hub'); // Structurally the old blueHub, color-wise now yellow
   
   if (greenHub && yellowHub && yellowHub.style.width === '20px') {
     const greenRect = greenHub.getBoundingClientRect();
@@ -442,7 +442,7 @@ function adjustBlueHubPosition() {
     yellowHub.style.top = (greenRect.bottom + 10) + 'px';
   }
 
-  // GEÄNDERT/ERWEITERT: Positioniert das neue blaue Viereck des Regexfinders kaskadierend unter dem gelben Hub
+  // CHANGED/EXTENDED: Positions the new blue square of the regex finder cascadingly below the yellow hub
   const regexHub = document.getElementById('regex-stats-hub');
   if (regexHub && regexHub.style.width === '20px') {
     const referenceHub = yellowHub || greenHub;
@@ -480,7 +480,7 @@ function renderMinerTable(shadow, tab) {
         <th>Note ID</th>
         <th>Word</th>
         <th>SentencePlain</th>
-        <th>English Defintion Overview</th>
+        <th>English Definition Overview</th>
         <th>Frequency</th>
         <th>Correct Japanese Definition</th>
       </tr>
@@ -504,7 +504,7 @@ function renderMinerTable(shadow, tab) {
     thead.innerHTML = `
       <tr>
         <th style="width: 20%;">NID</th>
-        <th style="width: 80%;">Gesammelte Sätze (mit ID)</th>
+        <th style="width: 80%;">Collected Sentences (with ID)</th>
       </tr>
     `;
     const grouped = {};
@@ -539,7 +539,7 @@ function triggerTSVExport(shadow, tab) {
 
   if (tab === "single") {
     filename = "anki_individual_cards.tsv";
-    outputText = ["Note ID", "Word", "SentencePlain", "English Defintion Overview", "Frequency", "Correct Japanese Definition"].join('\t') + '\n';
+    outputText = ["Note ID", "Word", "SentencePlain", "English Definition Overview", "Frequency", "Correct Japanese Definition"].join('\t') + '\n';
     
     minedItems.forEach(item => {
       const rowData = [
@@ -589,7 +589,7 @@ function setupStatsHub() {
   hub.style.position = 'fixed';
   hub.style.width = '20px';
   hub.style.height = '20px';
-  hub.style.backgroundColor = '#f1c40f'; // GEÄNDERT: Von Blau (#2980b9) zu Gelb
+  hub.style.backgroundColor = '#f1c40f'; // CHANGED: From Blue (#2980b9) to Yellow
   hub.style.borderRadius = '4px';
   hub.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
   hub.style.zIndex = '9999999b'; 
@@ -610,7 +610,7 @@ function setupStatsHub() {
   const shadow = hub.attachShadow({ mode: 'open' });
   
   const style = document.createElement('style');
-  // GEÄNDERT: Farbschemata im Stylesheet auf Gelb/Gold angepasst, um optimale Lesbarkeit zu gewährleisten
+  // CHANGED: Color scheme in the stylesheet adjusted to Yellow/Gold to ensure optimal readability
   style.textContent = `
     .panel-container { display: none; width: 100%; height: 100%; flex-direction: column; background: #dfe6e9; box-sizing: border-box; font-family: sans-serif; color: #2d3436; }
     .panel-header { background: #f1c40f; color: #2d3436; padding: 6px 10px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
@@ -633,13 +633,13 @@ function setupStatsHub() {
 
   container.innerHTML = `
     <div class="panel-header">
-      <span>Grammatik Analyse & Navigation</span>
+      <span>Grammar Analysis & Navigation</span>
       <button class="close-panel-btn">✕</button>
     </div>
     <div class="tab-bar">
-      <button class="tab-btn active" id="btn-tab-freq">Häufigkeit</button>
-      <button class="tab-btn" id="btn-tab-chrono">Chronologisch</button>
-      <button class="tab-btn" id="btn-tab-sorted">Sortiert</button>
+      <button class="tab-btn active" id="btn-tab-freq">Frequency</button>
+      <button class="tab-btn" id="btn-tab-chrono">Chronological</button>
+      <button class="tab-btn" id="btn-tab-sorted">Sorted</button>
     </div>
     <div class="table-wrapper">
       <table id="stats-table">
@@ -714,8 +714,8 @@ function renderStatsTable(shadow, tab) {
   if (tab === "freq") {
     thead.innerHTML = `
       <tr>
-        <th style="width: 70%;">Grammatik ("Level And Grammar Point")</th>
-        <th style="width: 30%;">Anzahl Treffer</th>
+        <th style="width: 70%;">Grammar ("Level And Grammar Point")</th>
+        <th style="width: 30%;">Hit Count</th>
       </tr>
     `;
     
@@ -727,7 +727,7 @@ function renderStatsTable(shadow, tab) {
     const sortedFreq = Object.entries(counts).sort((a, b) => b[1] - a[1]);
 
     if (sortedFreq.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="2" style="text-align:center; color:#7f8c8d;">Keine Treffer analysiert.</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="2" style="text-align:center; color:#7f8c8d;">No matches analyzed.</td></tr>`;
       return;
     }
 
@@ -740,14 +740,14 @@ function renderStatsTable(shadow, tab) {
   } else if (tab === "chrono") {
     thead.innerHTML = `
       <tr>
-        <th style="width: 30%;">Match (Sprungmarke)</th>
-        <th style="width: 50%;">Grammatik Punkt</th>
+        <th style="width: 30%;">Match (Anchor)</th>
+        <th style="width: 50%;">Grammar Point</th>
         <th style="width: 20%;">Position</th>
       </tr>
     `;
 
     if (analysisMatches.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; color:#7f8c8d;">Keine Matches vorhanden.</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; color:#7f8c8d;">No matches available.</td></tr>`;
       return;
     }
 
@@ -767,8 +767,8 @@ function renderStatsTable(shadow, tab) {
   } else if (tab === "sorted") {
     thead.innerHTML = `
       <tr>
-        <th style="width: 40%;">Match (Sprungmarke)</th>
-        <th style="width: 60%;">Position im Text</th>
+        <th style="width: 40%;">Match (Anchor)</th>
+        <th style="width: 60%;">Position in Text</th>
       </tr>
     `;
 
@@ -781,7 +781,7 @@ function renderStatsTable(shadow, tab) {
       .map(entry => entry[0]);
 
     if (sortedGrammarNames.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="2" style="text-align:center; color:#7f8c8d;">Keine Matches vorhanden.</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="2" style="text-align:center; color:#7f8c8d;">No matches available.</td></tr>`;
       return;
     }
 
@@ -939,7 +939,7 @@ function showModalPopup(nids, grammarData, clickedSpan) {
         minedItems.push(newMinedItem);
         updateFloatingHubState();
         
-        e.target.textContent = "✓ Geadded";
+        e.target.textContent = "✓ Added";
         e.target.style.backgroundColor = "#219653";
         setTimeout(() => {
           e.target.textContent = "+ Anki";

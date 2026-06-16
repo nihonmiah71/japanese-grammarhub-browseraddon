@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Grammatik Add-on Einstellungen</title>
+  <title>Grammar Add-on Settings</title>
   <style>
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; max-width: 1000px; margin: auto; background-color: #f5f6fa; color: #2f3640; }
     h2 { color: #2f3542; border-bottom: 2px solid #74b9ff; padding-bottom: 10px; margin-bottom: 20px; }
@@ -25,33 +25,31 @@
 </head>
 <body>
 
-  <h2>Japanisch Grammatik-Filter Einstellungen</h2>
+  <h2>Japanese Grammar Filter Settings</h2>
 
   <div class="sticky-bar">
-    <button id="save">Einstellungen Speichern</button>
+    <button id="save">Save Settings</button>
     <div class="global-actions">
-      <button id="all">Alle aktivieren</button>
-      <button id="none">Alle deaktivieren</button>
+      <button id="all">Activate All</button>
+      <button id="none">Deactivate All</button>
     </div>
     <span id="status"></span>
   </div>
 
   <div class="group" id="tag-management-container" style="background: #f8f9fa; border: 1px dashed #74b9ff;">
-    <h3>Gruppen nach Tags aktivieren/deaktivieren</h3>
-    <div id="tag-buttons-grid" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
-      </div>
+    <h3>Activate/Deactivate Groups by Tags</h3>
+    <div id="tag-buttons-grid" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;"></div>
     
     <hr style="border: 0; border-top: 1px solid #dcdde1; margin: 15px 0;">
     
-    <h3>Eigene Gruppe (Tag) aus Auswahl erstellen & TSV exportieren</h3>
+    <h3>Compare Selected Grammar Points</h3>
     <div style="display: flex; gap: 10px; align-items: center;">
-      <input type="text" id="new-tag-name" placeholder="Neuer Tag-Name (z.B. custom_review)" style="padding: 8px; border: 1px solid #dcdde1; border-radius: 4px; flex-grow: 1;">
-      <button id="export-tag-tsv" style="background-color: #eccc68; color: #2f3542;">Tag zuweisen & TSV exportieren</button>
+      <button id="contrast-grammars" style="background-color: #eccc68; color: #2f3542; font-size: 16px; padding: 12px 24px;">Contrast Grammars</button>
     </div>
   </div>
 
   <div id="grammar-container">
-    <div class="loading">Lade lokale Grammatikdaten...</div>
+    <div class="loading">Loading local grammar data...</div>
   </div>
 
   <script src="options.js"></script>
