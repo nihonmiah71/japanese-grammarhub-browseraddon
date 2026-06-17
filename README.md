@@ -2,6 +2,14 @@
 
 A powerful, serverless Chrome extension designed to seamlessly integrate Japanese grammar reading practice with Anki. It analyzes webpages for JLPT grammar patterns using advanced regular expressions, highlights them in context, provides comprehensive statistics, and allows you to mine sentences directly into your Anki decks.
 
+---
+
+## Disclaimer
+
+The python scripts will probably not run on your system unless you installed all the right packages, some of them might only be supported for older pyhton versions (Python 3.12), debug with AI and install the required packages as needed.
+
+---
+
 ## 🚀 Features
 
 ### 🔍 In-Page Grammar Analysis
