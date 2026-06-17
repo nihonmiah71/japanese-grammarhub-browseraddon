@@ -18,7 +18,7 @@ A powerful, serverless Chrome extension designed to seamlessly integrate Japanes
 
 ### 🟢 Anki Mining Hub (The Green Bubble)
 
-* **Floating Hub:** A draggable green hub that tracks your mined sentences. Click to expand into a full workspace.
+* **Floating Hub:** A draggable green hub that tracks your mined sentences. Click to expand into a full workspace. (Note might load for a while for the first opening/You might have to click a certain point of the green square)
 * **1-Click Sentence Mining:** Click the "+ Anki" button inside any grammar popup to instantly capture the target word, the surrounding sentence context, and the grammar definition.
 * **Dual Tab Interface:**
 * **Individual Cards:** View and edit single mined sentences, complete with frequency, English definitions, and Japanese notes.
